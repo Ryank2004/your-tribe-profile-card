@@ -71,6 +71,8 @@ p2 {
   margin-left: 20px;
   margin-right: 20px;
 }
+
+/* hier staat image1 ipv img zodat ik alle fotos kan onderscheiden en verschillende properties kan toepassen */
 .image1 {
   position: relative;
   align-items: center;
@@ -94,6 +96,9 @@ p2 {
   transition: transform 1500ms;
   transform-style: preserve-3d;
 }
+/* De transition property zorgt ervor dat er een animatie op de 180 graden flip zit */
+/* De preserve-3d property staat er zodat mijn card word behandeld als een 3d object. Zonder deze property liggen de kaarten niet de juiste kant op.*/
+
 
 .front,
 .back {
@@ -104,15 +109,17 @@ p2 {
   border-radius: 2rem;
   backface-visibility: hidden;
 }
+  /* Hier staat backface-visibility hidden zodat elke keer de achterkant niet zichtbaar is */
 
 .front {
   background: linear-gradient(0deg, rgb(97, 54, 19) 40%, #FFFDD1 100%);
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
 }
 
+/* Er staat >card bij omdat als je hem alleen op card toepast word het heel buggy als je heen en weer gaat. 
+Nu staat het bij container want die staat vast omdat die geen animatie heeft */
 .container:hover > .card {
   cursor: pointer;
   transform: rotateY(180deg);
