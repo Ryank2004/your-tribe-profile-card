@@ -59,7 +59,7 @@ h3 {
   margin-top: 20px;
   font-size: 1.5em;
 }
-p2 {
+.p2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -67,7 +67,7 @@ p2 {
   justify-content: flex-start;
   color:#FFFDD1;
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 14px;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -149,7 +149,7 @@ Nu staat het bij container want die staat vast omdat die geen animatie heeft */
   .image2 {
   position: relative;
   align-items: center;
-  top:1em;
+  top:.5em;
   border-radius: 3em;
   box-shadow: 0 0 2px 2px rgba(0,0,0,.2);
   transition: .25s .15s;
@@ -166,6 +166,7 @@ Nu staat het bij container want die staat vast omdat die geen animatie heeft */
     width: 12em;
     height: auto;
     margin-left: 15px;
+    bottom: .5em;
     
   
 
